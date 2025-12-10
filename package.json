@@ -1,6 +1,8 @@
 {
   "name": "ucc-student-portal",
   "version": "0.1.0",
+  "description": "University of Caloocan Campus Student Portal - A modern student community platform",
+  "author": "Allyzza",
   "private": true,
   "scripts": {
     "dev": "next dev",
