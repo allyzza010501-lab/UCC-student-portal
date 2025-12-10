@@ -67,6 +67,46 @@
 
 ---
 
+## ⚙️ Setup Guides (For Developers)
+
+### **Frontend Development**
+
+6. **[FRONTEND_SETUP.md](./FRONTEND_SETUP.md)** ⚛️
+   - **What**: Complete Vite + React development environment guide
+   - **When to Read**: Before starting frontend development
+   - **Key Sections**:
+     - Quick start instructions
+     - Project dependencies breakdown
+     - Detailed project structure
+     - Vite, TypeScript, Tailwind configuration files
+     - Environment variables setup
+     - npm scripts reference
+     - API integration patterns (Axios, React Query, custom hooks)
+     - Testing setup (Vitest + React Testing Library)
+     - Mobile-first design patterns
+     - WCAG 2.1 accessibility guidelines
+     - Cloudflare Pages deployment
+
+### **Backend Development**
+
+7. **[BACKEND_SETUP.md](./BACKEND_SETUP.md)** 🔧
+   - **What**: Complete Cloudflare Workers + D1 + R2 setup guide
+   - **When to Read**: Before building API endpoints
+   - **Key Sections**:
+     - Wrangler CLI installation and authentication
+     - D1 database creation and migrations
+     - R2 bucket setup for file storage
+     - Detailed project structure
+     - wrangler.toml configuration
+     - Database schema setup
+     - Environment variables for dev/staging/prod
+     - Development workflow with local testing
+     - API route handler examples (auth, posts, users)
+     - JWT middleware and authentication patterns
+     - Deployment to Cloudflare Workers
+
+---
+
 ## 🗂️ File Organization
 
 ```

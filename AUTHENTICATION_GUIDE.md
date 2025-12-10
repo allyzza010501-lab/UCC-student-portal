@@ -768,6 +768,306 @@ async function handleResetPassword(token, newPassword) {
 
 ---
 
+## ⚛️ Client-Side Implementation (React)
+
+### **Custom useAuth Hook**
+
+```typescript
+// src/hooks/useAuth.ts
+import { useCallback, useState } from 'react'
+import { useMutation, useQuery } from '@tanstack/react-query'
+import { apiClient } from '@/lib/api/client'
+import { useAuthStore } from '@/store/authStore'
+import type { LoginCredentials, RegisterData, User } from '@/types'
+
+export function useAuth() {
+  const { token, setToken, setUser, logout } = useAuthStore()
+  const [error, setError] = useState<string | null>(null)
+
+  // Get current user
+  const { data: user, isLoading: isLoadingUser } = useQuery({
+    queryKey: ['currentUser', token],
+    queryFn: async () => {
+      if (!token) return null
+      const response = await apiClient.get('/users/me')
+      return response.data as User
+    },
+    enabled: !!token,
+  })
+
+  // Login mutation
+  const loginMutation = useMutation({
+    mutationFn: async (credentials: LoginCredentials) => {
+      const response = await apiClient.post('/auth/login', credentials)
+      return response.data as { token: string; user: User }
+    },
+    onSuccess: (data) => {
+      setToken(data.token)
+      setUser(data.user)
+      setError(null)
+    },
+    onError: (error: any) => {
+      const message = error.response?.data?.message || 'Login failed'
+      setError(message)
+    },
+  })
+
+  // Register mutation
+  const registerMutation = useMutation({
+    mutationFn: async (data: RegisterData) => {
+      const response = await apiClient.post('/auth/register', data)
+      return response.data as { token: string; user: User }
+    },
+    onSuccess: (data) => {
+      setToken(data.token)
+      setUser(data.user)
+      setError(null)
+    },
+    onError: (error: any) => {
+      const message = error.response?.data?.message || 'Registration failed'
+      setError(message)
+    },
+  })
+
+  // Email verification mutation
+  const verifyEmailMutation = useMutation({
+    mutationFn: async (token: string) => {
+      const response = await apiClient.post('/auth/verify-email', { token })
+      return response.data
+    },
+    onError: (error: any) => {
+      const message = error.response?.data?.message || 'Email verification failed'
+      setError(message)
+    },
+  })
+
+  return {
+    user,
+    token,
+    error,
+    isLoadingUser,
+    isAuthenticated: !!token,
+    login: loginMutation.mutate,
+    register: registerMutation.mutate,
+    verifyEmail: verifyEmailMutation.mutate,
+    logout,
+  }
+}
+```
+
+### **Login Form Component**
+
+```typescript
+// src/components/auth/LoginForm.tsx
+import { useState } from 'react'
+import { useAuth } from '@/hooks/useAuth'
+import { useNavigate } from 'react-router-dom'
+
+export function LoginForm() {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const { login, error, isLoading } = useAuth()
+  const navigate = useNavigate()
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+
+    login(
+      { email, password },
+      {
+        onSuccess: () => {
+          // Redirect to home after successful login
+          navigate('/home')
+        },
+      }
+    )
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+      <h2 className="text-2xl font-bold mb-6 text-gray-900">
+        Login to Heralds
+      </h2>
+
+      <div className="mb-4">
+        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+          UCC Email Address
+        </label>
+        <input
+          id="email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="you@ucc.edu.ph"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+          required
+          disabled={isLoading}
+        />
+        <p className="text-xs text-gray-500 mt-1">Must be a valid @ucc.edu.ph email</p>
+      </div>
+
+      <div className="mb-6">
+        <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+          Password
+        </label>
+        <input
+          id="password"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="••••••••"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+          required
+          disabled={isLoading}
+        />
+      </div>
+
+      {error && (
+        <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-md text-red-700 text-sm">
+          {error}
+        </div>
+      )}
+
+      <button
+        type="submit"
+        disabled={isLoading || !email || !password}
+        className="w-full bg-primary-500 text-white py-2 px-4 rounded-md font-medium hover:bg-primary-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+      >
+        {isLoading ? 'Logging in...' : 'Login'}
+      </button>
+
+      <p className="text-sm text-gray-600 text-center mt-4">
+        Don't have an account?{' '}
+        <a href="/register" className="text-primary-500 hover:underline">
+          Register here
+        </a>
+      </p>
+    </form>
+  )
+}
+```
+
+### **Protected Route Component**
+
+```typescript
+// src/components/auth/ProtectedRoute.tsx
+import { Navigate } from 'react-router-dom'
+import { useAuth } from '@/hooks/useAuth'
+
+interface ProtectedRouteProps {
+  children: React.ReactNode
+}
+
+export function ProtectedRoute({ children }: ProtectedRouteProps) {
+  const { isAuthenticated, isLoadingUser } = useAuth()
+
+  if (isLoadingUser) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-gray-600">Loading...</div>
+      </div>
+    )
+  }
+
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace />
+  }
+
+  return <>{children}</>
+}
+```
+
+### **API Client with Token Handling**
+
+```typescript
+// src/lib/api/client.ts
+import axios from 'axios'
+import { useAuthStore } from '@/store/authStore'
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8787'
+
+export const apiClient = axios.create({
+  baseURL: API_BASE_URL,
+  timeout: 10000,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  withCredentials: true, // Include cookies in requests
+})
+
+// Request interceptor - add auth token
+apiClient.interceptors.request.use((config) => {
+  const { token } = useAuthStore.getState()
+  
+  if (token) {
+    // Add token to Authorization header
+    config.headers.Authorization = `Bearer ${token}`
+  }
+  
+  return config
+})
+
+// Response interceptor - handle token refresh or expiration
+apiClient.interceptors.response.use(
+  (response) => response,
+  async (error) => {
+    const { logout } = useAuthStore.getState()
+
+    // If token is expired (401), redirect to login
+    if (error.response?.status === 401) {
+      logout()
+      window.location.href = '/login'
+    }
+
+    // Rate limiting (429)
+    if (error.response?.status === 429) {
+      console.warn('Rate limited - try again in a few moments')
+    }
+
+    return Promise.reject(error)
+  }
+)
+
+export default apiClient
+```
+
+### **Zustand Auth Store**
+
+```typescript
+// src/store/authStore.ts
+import { create } from 'zustand'
+import type { User } from '@/types'
+
+interface AuthStore {
+  token: string | null
+  user: User | null
+  setToken: (token: string) => void
+  setUser: (user: User) => void
+  logout: () => void
+}
+
+export const useAuthStore = create<AuthStore>((set) => ({
+  token: localStorage.getItem('ucc_token'),
+  user: null,
+
+  setToken: (token: string) => {
+    localStorage.setItem('ucc_token', token)
+    set({ token })
+  },
+
+  setUser: (user: User) => {
+    set({ user })
+  },
+
+  logout: () => {
+    localStorage.removeItem('ucc_token')
+    set({ token: null, user: null })
+  },
+}))
+```
+
+---
+
 ## 📊 Authentication Security Checklist
 
 - [ ] All passwords hashed with Bcrypt (12 rounds minimum)

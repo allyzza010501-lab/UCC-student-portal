@@ -78,24 +78,33 @@ The landing page serves as the gateway to an inclusive student community platfor
 
 ## 🏗️ Technical Architecture
 
-### **Frontend Stack**
-- **Framework**: Next.js 16 (App Router)
+### **Frontend Stack (SPA - Single Page Application)**
+- **Framework**: Vite 5 + React 18
 - **Language**: TypeScript 5
 - **Styling**: Tailwind CSS 4
-- **State Management**: React Context / Zustand
-- **API Communication**: Fetch API / TanStack Query
+- **Routing**: React Router v6
+- **State Management**: Zustand (lightweight, perfect for React)
+- **Data Fetching**: TanStack Query v5 (React Query)
+- **Build Tool**: Vite (instant HMR, < 100ms refresh)
 - **Testing**: Vitest + React Testing Library
 - **CI/CD**: GitHub Actions → Cloudflare Pages
 
-### **Backend Stack**
+### **Why Vite + React (Not Next.js)**
+- ✅ **Idiomatic for Cloudflare**: No adapter needed
+- ✅ **SPA-Native**: Perfect for frontend-only applications
+- ✅ **Fast Development**: < 100ms HMR (Hot Module Replacement)
+- ✅ **Zero Config for Cloudflare Pages**: Vite builds → Cloudflare Pages (direct)
+- ✅ **Lean Stack**: Only what you need, no server-side features
+
+### **Backend Stack (Serverless API)**
 - **Serverless Compute**: Cloudflare Workers
 - **Database**: Cloudflare D1 (SQLite)
 - **File Storage**: Cloudflare R2 (S3-compatible)
-- **Authentication**: Cloudflare Zero Trust / Custom JWT
+- **Authentication**: Custom JWT implementation
 - **Analytics**: Cloudflare Web Analytics
 
 ### **Deployment & Hosting**
-- **CDN**: Cloudflare Pages (Global edge distribution)
+- **Frontend**: Cloudflare Pages (Static SPA hosting)
 - **Domain**: ucc-student-portal.campus (TBD)
 - **SSL/TLS**: Automatic via Cloudflare
 - **Performance Targets**:
