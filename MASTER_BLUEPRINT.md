@@ -18,40 +18,51 @@ This blueprint outlines the complete vision, architecture, and execution strateg
 ## 🎓 Understanding UCC: Brand Foundation
 
 ### **Institution Profile**
-- **Official Name**: Union Christian College
-- **Location**: San Fernando City, La Union, Philippines
-- **Founded**: 1910 (115+ years of educational excellence)
-- **Campus**: Scenic hilltop overlooking San Fernando Bay
+- **Official Name**: University of Caloocan City (UCC)
+- **Type**: Public-type Local University
+- **Location**: Caloocan City, Metro Manila, Philippines
+- **Founded**: 1971 (54 years, young and growing institution)
+- **Campuses**: Main Campus (Biglang Awa), Camarin, Congressional, Bagong Silang (Engineering)
+- **Student Population**: 13,000+ students
+- **Key Initiative**: 100% Free Tuition for qualified Caloocan residents
 
 ### **Core Identity**
-- **Vision**: A distinct Christian educational institution committed to whole person education responsive to glocal needs and job-market opportunities
-- **Mission**: Integrate Biblical Truths in academic excellence to produce Christian-servant leaders and responsible citizens
-- **Core Values**: **FIRES**
-  - **F**aith
-  - **I**ntegrity
-  - **R**esponsibility
-  - **E**xcellence
-  - **S**ervice
+- **Vision**: "A competitive and upright university committed to building a **WISE** (World-class, Innovative, Sustainable, Empowered) community."
+- **Mission**: "To provide quality instruction, impactful co-curricular activities, sustainable community engagement, and research & development initiatives through a dynamic quality management system and learner empowerment to become agents of holistic change."
+- **Core Values**: **WISE Framework**
+  - **W**orld-class (Academic Excellence)
+  - **I**nnovative (Forward-thinking, Modern)
+  - **S**ustainable (Long-term Impact, Community)
+  - **E**mpowered (Student Agency, Capability)
 
 ### **Brand Characteristics**
-- Christian educational heritage with social responsibility
-- Emphasis on community, cultural exchange, and indigenous knowledge
-- Strong student engagement and activity programs
-- Global perspective with local impact
-- Academic rigor balanced with holistic development
+- **Philosophy**: "Basta sa Caloocan, walang batang maiiwan" (In Caloocan, no child is left behind)
+- **Student Identity**: "Batang Kankaloo" (Caloocan Students/Children)
+- Emphasis on educational equity and accessibility
+- Strong commitment to community engagement
+- Progressive, inclusive, forward-looking approach
+- Urban Metro Manila context with local community pride
+- Academic excellence made accessible to all
 
-### **Recommended Brand Colors** (To be confirmed with UCC)
-- **Primary**: Deep Navy Blue (#002E5C) - Trust, stability, academic heritage
-- **Secondary**: Gold/Maroon (#C41E3A or #B8860B) - Excellence, warmth, tradition
-- **Accent**: Fresh Green (#2ECC71) - Growth, service, community
-- **Neutral**: Light Gray (#F5F5F5), White (#FFFFFF), Dark Gray (#333333)
+### **Recommended Brand Colors** (REVISED for UCC)
+- **Primary**: Modern Blue (#0066CC) - Trust, innovation, accessibility
+- **Secondary**: Energetic Orange (#FF6B35) - Action, forward momentum, innovation
+- **Accent**: Fresh Green (#2ECC71) - Growth, sustainability, empowerment
+- **Accent**: Gold (#FFC107) - Hope, excellence, aspiration
+- **Neutral**: Light Gray (#F8F9FA), White (#FFFFFF), Dark Gray (#2D3436)
 
 ---
 
 ## 🚀 Platform Vision & Core Features
 
+### **Platform Motto (REVISED)**
+"Walang Maiiwan. Connected." 
+*(No One Left Behind. Connected.)*
+
+**Tagline**: "Batang Kankaloo - Empowered. Connected. Unstoppable."
+
 ### **Phase 1: Landing Page + Social Feed Foundation (MVP)**
-The landing page serves as the gateway, while we establish the technical foundation for the full social platform.
+The landing page serves as the gateway to an inclusive student community platform, embodying UCC's mission of educational equity and empowerment. While we establish the technical foundation for the full social platform.
 
 ### **Phase 2: Full Social Platform (Post-MVP)**
 - Student posts & content creation
@@ -61,6 +72,7 @@ The landing page serves as the gateway, while we establish the technical foundat
 - User profiles & following system
 - Notifications & real-time updates
 - Moderation & community guidelines
+- Peer mentoring and support features
 
 ---
 
@@ -131,38 +143,39 @@ The landing page serves as the gateway, while we establish the technical foundat
 - Mobile: Hamburger menu with smooth animation
 
 ### **2. Hero Section**
-- **Headline**: "Your Voices. Your Community. Your College."
-- **Subheading**: "The ultimate platform for UCC students to connect, share, and grow together."
-- **CTA Button**: "Join the Community" (primary action)
-- **Visual**: Subtle animated background (beach/sunset theme matching UCC's hilltop bay view)
-- **Secondary Visual**: Hero image of diverse students engaging
+- **Headline**: "Your Voice. Your Future. Walang Maiiwan."
+- **Subheading**: "The ultimate platform for Batang Kankaloo to connect, empower each other, and shape the future."
+- **CTA Button**: "Join the Movement" (primary action)
+- **Visual**: Dynamic, energetic background with diverse student imagery (urban Caloocan setting)
+- **Secondary Visual**: Hero image showing diverse, empowered UCC students collaborating
 
 ### **3. Features Showcase (4 Cards)**
-1. **📱 Share Your Story**
-   - "Post thoughts, achievements, and experiences"
-   - Icon: Book/Pen
+1. **📱 Amplify Your Voice**
+   - "Every Batang Kankaloo has something valuable to say"
+   - Icon: Megaphone/Voice
    
-2. **💬 Join the Conversation**
-   - "Discuss topics that matter to your campus"
-   - Icon: Chat Bubbles
+2. **🤝 Connect & Empower**
+   - "Build relationships that matter and create change together"
+   - Icon: Connected Hands
    
-3. **👍 React & Engage**
-   - "Express yourself with reactions and meaningful comments"
-   - Icon: Heart/Emoji
+3. **⭐ Celebrate Success**
+   - "Recognize excellence and lift each other up"
+   - Icon: Star/Trophy
    
-4. **👥 Build Your Network**
-   - "Connect with fellow UCC students and find your tribe"
-   - Icon: People/Network
+4. **🚀 Lead the Future**
+   - "From student voices to community leaders"
+   - Icon: Rocket/Growth Arrow
 
 ### **4. Social Proof Section**
-- **Live Stats**: Active users, Posts created, Communities formed (animated counters)
-- **Testimonials**: 3-4 real student quotes
-- **Featured Posts**: Preview of platform content quality
+- **Live Stats**: Active Batang Kankaloo, Posts created, Communities engaged (animated counters)
+- **Testimonials**: 3-4 real student quotes showcasing empowerment and connection
+- **Featured Posts**: Preview of platform content quality and diversity
 
 ### **5. Values Alignment Section**
-- **"Aligned with UCC's FIRES Values"**
-  - Faith • Integrity • Responsibility • Excellence • Service
+- **"Built on UCC's WISE Values"**
+  - World-class • Innovative • Sustainable • Empowered
   - Brief description of how the platform embodies these values
+  - Connection to "Walang Maiiwan" mission
 
 ### **6. FAQ Section**
 - Common questions about access, safety, privacy
@@ -182,25 +195,23 @@ The landing page serves as the gateway, while we establish the technical foundat
 
 ## 🎨 Visual Guidelines
 
-### **Color Palette (Finalized)**
+### **Color Palette (Finalized for UCC)**
 ```
-Primary Navy: #002E5C
-Primary Dark Navy: #001A36
-Secondary Gold: #D4A017
-Secondary Maroon: #C41E3A
-Accent Green: #2ECC71
-Accent Light Blue: #3498DB
+Primary Blue:       #0066CC (Modern, Trust, Innovation)
+Secondary Orange:   #FF6B35 (Energy, Action, Forward Motion)
+Accent Green:       #2ECC71 (Growth, Sustainability)
+Accent Gold:        #FFC107 (Hope, Excellence, Aspiration)
 
-Neutral White: #FFFFFF
-Neutral Light Gray: #F5F5F5
-Neutral Medium Gray: #CCCCCC
-Neutral Dark Gray: #333333
-Neutral Black: #1A1A1A
+Neutral White:      #FFFFFF (Clarity)
+Neutral Light Gray: #F8F9FA (Clean, Modern)
+Neutral Dark Gray:  #2D3436 (Professional)
+Neutral Black:      #1A1A1A (Deep contrast)
 
-Success: #27AE60
-Warning: #F39C12
-Error: #E74C3C
-Info: #3498DB
+Semantic Colors:
+Success:            #27AE60 (Achievement)
+Warning:            #F39C12 (Caution)
+Error:              #E74C3C (Alert)
+Info:               #3498DB (Information)
 ```
 
 ### **Spacing Scale** (Base: 4px)

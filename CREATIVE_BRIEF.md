@@ -1,133 +1,133 @@
 # UCC Student Portal - Creative Brief
 
 **Project**: UCC Student Portal (Heralds)  
-**Client**: Union Christian College  
-**Date**: December 10, 2025  
+**Client**: University of Caloocan City  
+**Date**: December 11, 2025 (REVISED)
 **Duration**: 8 weeks (MVP Phase)
 
 ---
 
 ## 🎯 Project Objective
 
-Create an **elegant, branded landing page and social platform foundation** that captures UCC's prestigious academic heritage while offering a modern, engaging digital experience for students. The platform should inspire participation, foster community, and reflect UCC's core values of Faith, Integrity, Responsibility, Excellence, and Service.
+Create an **elegant, inclusive landing page and social platform foundation** that authentically represents University of Caloocan City's mission of educational equity ("Walang Maiiwan - No One Left Behind") while empowering Batang Kankaloo (UCC students) to connect, amplify their voices, and drive positive change. The platform should feel modern, accessible, and forward-looking while honoring UCC's commitment to WISE values.
 
 ---
 
 ## 📊 Target Audience
 
 ### **Primary Users**
-- **UCC Students**: Ages 16-25, diverse academic disciplines
-- **Tech Savviness**: Moderate to high (familiar with Facebook, Instagram, Discord)
-- **Devices**: Mobile-first (70%), Desktop (30%)
-- **Engagement Drivers**: Community connection, social status, academic collaboration
+- **Batang Kankaloo**: UCC Students, Ages 16-25, diverse academic disciplines
+- **Socioeconomic Profile**: Mix of low-income and middle-class students (UCC focus on accessibility)
+- **Tech Savviness**: Moderate to high (familiar with Facebook, Instagram, TikTok)
+- **Devices**: Mobile-first (75%), Desktop (25%)
+- **Engagement Drivers**: Community connection, peer support, voice and agency, academic collaboration
 
 ### **Secondary Users**
-- Faculty/Staff (moderation, oversight)
-- Campus organizations (announcements, event promotion)
-- Prospective students (landing page exploration)
+- Faculty/Staff (mentorship, oversight)
+- Campus organizations (community building)
+- Prospective students (platform exploration)
+- Alumni (mentorship and networking)
 
 ### **Psychographic Profile**
-- Value-conscious about their college choice
-- Seeking meaningful peer connections
-- Interested in campus activities and community impact
-- Concerned about privacy and moderation
-- Appreciate exclusive, student-only spaces
+- Seeking meaningful peer connections and support network
+- Want to have their voice heard and valued
+- Committed to academic and personal growth
+- Interested in community service and social impact
+- Appreciate platforms that are inclusive and accessible
+- Value educational equity and mutual support
 
 ---
 
 ## 🎨 Creative Direction
 
-### **Brand Positioning**
-**"Your Voice. Your Community. Your Legacy at UCC."**
+### **Brand Positioning (REVISED)**
+**"Walang Maiiwan. Connected."**
 
-A space where student voices matter, where community connections run deep, and where every member contributes to the legacy of Union Christian excellence.
+A space where every Batang Kankaloo's voice matters, where barriers to connection are broken down, and where students lift each other up to achieve their fullest potential.
 
-### **Tone & Voice**
-- **Welcoming**: Inclusive, non-judgmental, affirming
+### **Tone & Voice (REVISED)**
+- **Inclusive**: Welcoming to all, regardless of background
+- **Empowering**: You have value, your voice matters
+- **Accessible**: Easy to understand, no jargon, real language
+- **Progressive**: Modern, forward-thinking, future-focused
+- **Supportive**: We're here for you, community-driven
 - **Authentic**: Real student stories, genuine moments
-- **Empowering**: Celebrating student achievement and potential
-- **Respectful**: Honors UCC's Christian heritage and values
-- **Contemporary**: Modern language without losing substance
 
 ### **Visual Identity**
 
-#### **Primary Color Personality**
-- **Navy Blue** (#002E5C): Trust, stability, academic excellence
-  - Represents UCC's heritage and educational prestige
-  - Conveys reliability and security
-  - Creates a sophisticated, premium feel
+#### **Primary Color Personality (REVISED)**
+- **Modern Blue** (#0066CC): Trust, innovation, accessibility
+  - Represents forward-thinking education
+  - Conveys reliability and modern approach
+  - Creates contemporary, energetic feel
 
-- **Gold** (#D4A017): Achievement, excellence, warmth
-  - Highlights premium moments and achievements
-  - Adds luxury and appreciation
-  - Balances the cool navy
+- **Energetic Orange** (#FF6B35): Action, momentum, innovation
+  - Represents forward movement and change
+  - Creates warmth and approachability
+  - Symbolizes UCC's growth and energy
 
-- **Maroon** (#C41E3A): Energy, passion, community
-  - Represents student vibrancy and engagement
-  - Creates emotional connection
-  - Used for calls-to-action and highlights
+- **Fresh Green** (#2ECC71): Growth, sustainability, community care
+  - Reflects commitment to long-term impact
+  - Represents student development and empowerment
+  - Environmental consciousness
 
-- **Green** (#2ECC71): Growth, service, renewal
-  - Reflects UCC's service value
-  - Represents student development
-  - Fresh, optimistic feel
+- **Gold** (#FFC107): Hope, excellence, aspiration
+  - Highlights student achievements
+  - Represents aspirational excellence
+  - Creates moments of celebration
 
 ### **Visual Style Guide**
 
-#### **Imagery**
-- **Students**: Diverse, genuine, candid moments
-- **Campus**: Beautiful shots of the hilltop location, bay views
-- **Community**: Group photos, collaborative moments, celebrations
-- **Aesthetic**: Warm, natural lighting; authentic over staged
-- **Photography**: 70% student-focused, 20% campus, 10% abstract/graphical
+#### **Imagery (REVISED)**
+- **Students**: Diverse, real, authentic - all ethnicities, abilities, socioeconomic backgrounds
+- **Urban Caloocan**: Metro Manila context, city pride, modern setting
+- **Empowerment**: Students speaking, leading, participating, helping each other
+- **Community**: Collaboration, group study, peer mentoring, mutual support
+- **Success**: Achievement moments, milestone celebrations, growth
+- **Aesthetic**: Vibrant, diverse, authentic (not staged), hopeful, energetic
 
 #### **Illustration Style**
-- Clean, modern line work
-- Geometric simplicity with human touch
-- Color-coordinated with brand palette
-- Icons: Minimalist, 2-3px stroke weight
+- Clean, modern line work with energetic colors
+- Geometric simplicity with human warmth
+- Inclusive representation in all illustrations
+- Icons: Bold, accessible, 2-3px stroke weight
 - Emoji reactions: Apple style (universal recognition)
 
-#### **Typography**
-- **Poppins** (Headlines): Bold, modern, friendly
-- **Inter** (Body): Clean, legible, professional
-- **Playfair Display** (Accent): Elegant, heritage moments (UCC branding)
+#### **Typography (REVISED)**
+- **Poppins** (Headlines): Bold, modern, friendly, accessible
+- **Inter** (Body): Clean, legible, professional, readable
+- **Montserrat** (Accent): Contemporary, tech-forward, modern (replaces Playfair)
 - **Letter Spacing**: Generous, breathing room
 - **Line Height**: 1.6x body, 1.3x headlines (readability focus)
 
-#### **Whitespace**
-- Generous margins and padding
-- Clear visual hierarchy
-- Prevents cognitive overload
-- Emphasizes premium feel
-
 ---
 
-## 🎬 Key Message Framework
+## 🎬 Key Message Framework (REVISED)
 
-### **Message 1: Connection**
-"Find Your People at UCC"
-- Speak to the need for peer connection
-- Emphasize diversity and inclusion
-- Show real student friendships forming
+### **Message 1: Voice & Empowerment**
+"Your Voice Matters"
+- Every Batang Kankaloo has something valuable to share
+- Platform amplifies student voices
+- Create space for authentic expression
 
-### **Message 2: Voice**
-"Your Story Matters"
-- Empower students to share
-- Celebrate diverse perspectives
-- Create a platform for student agency
+### **Message 2: Community & Connection**
+"Walang Maiiwan" (No One Left Behind)
+- Find your people and your community
+- Peer support and mutual empowerment
+- Collective strength and shared growth
 
-### **Message 3: Values**
-"Excellence Through Community"
-- Align with UCC's FIRES values
-- Show how platform supports growth
-- Connect to bigger mission
+### **Message 3: Values & Mission**
+"WISE Values in Action"
+- World-class education accessible to all
+- Innovative thinking and modern solutions
+- Sustainable community impact
+- Empowered student leaders
 
-### **Message 4: Exclusivity**
-"UCC Students Only"
-- Creates safe, curated community
-- Emphasizes belonging
-- Builds prestige and exclusivity
+### **Message 4: Belonging**
+"Batang Kankaloo United"
+- Creates identity and pride in UCC
+- Celebrates collective identity
+- Builds institutional loyalty
 
 ---
 
@@ -174,22 +174,22 @@ A space where student voices matter, where community connections run deep, and w
 
 ---
 
-## 🎯 Messaging Hierarchy
+## 🎯 Messaging Hierarchy (REVISED)
 
 ### **Headline (Above the Fold)**
-"Your Voices. Your Community. Your College."
+"Your Voice. Your Future. Walang Maiiwan."
 
 ### **Subheading**
-"The ultimate platform for UCC students to connect, share, and grow together."
+"The ultimate platform for Batang Kankaloo to connect, empower each other, and shape the future."
 
 ### **Feature Headlines**
-1. "Share Your Story" → Share thoughts and experiences
-2. "Join the Conversation" → Discuss topics that matter
-3. "React & Engage" → Express yourself authentically
-4. "Build Your Network" → Find your UCC community
+1. "Amplify Your Voice" → Every Batang Kankaloo has something valuable to say
+2. "Connect & Empower" → Build relationships that matter and create change together
+3. "Celebrate Success" → Recognize excellence and lift each other up
+4. "Lead the Future" → From student voices to community leaders
 
 ### **CTA Buttons**
-- Primary: "Join the Community" / "Get Started"
+- Primary: "Join the Movement" / "Get Started"
 - Secondary: "Learn More"
 - Tertiary: "Sign In"
 
